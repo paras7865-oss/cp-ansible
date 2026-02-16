@@ -1,0 +1,5 @@
+- name: Run playbook from collection
+  hosts: all
+  tasks:
+    - name: Include collection playbook
+      ansible.builtin.import_playbook: confluent.platform.validate_hosts

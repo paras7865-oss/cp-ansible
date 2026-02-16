@@ -3,3 +3,5 @@ collections:
   - name: confluent.platform
     version: 7.7.1
     source: https://galaxy.ansible.com # Or your private Automation Hub
+  - name: community.general
+    version: 8.4.0

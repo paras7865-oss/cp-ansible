@@ -2,3 +2,6 @@
 # No 'hosts:' or 'tasks:' headers here!
 - name: Import the playbook from the collection
   ansible.builtin.import_playbook: confluent.platform.validate_hosts
+  vars:
+    # These are the variables the collection is looking for
+    required_total_memory_mb_ungrouped: 8192

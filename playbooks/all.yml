@@ -2,3 +2,4 @@
 # No 'hosts:' or 'tasks:' headers here!
 - name: Import the playbook from the collection
   ansible.builtin.import_playbook: confluent.platform.all
+  become: true
